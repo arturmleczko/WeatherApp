@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section class="status-bar" data-status>
+        <p class="status-bar__info" data-status-info></p>
+        <button class="status-bar__close" data-close>
+            <i class="fas fa-times"></i>
+        </button>
+    </section>
+    <section class="search-engine">
+        <div class="search-engine__container">
+            <nav class="search-engine__buttons">
+                <button class="locate-btn pulse" data-locate-btn>
+                    <i class="fas fa-location-arrow"></i>
+                </button>
+                <button class="unit-btn" data-unit-btn>°F</button>
+                <button class="clear-btn" data-clear-btn>
+                    <i class="fas fa-eraser"></i>
+                </button>
+            </nav>
+            <h1 class="search-engine__heading">Weather App</h1>
+            <form action="" class="search-engine__form" data-form>
+                <input type="text" placeholder="Enter a place" autofocus class="search-input" data-input>
+                <button type="submit" class="search-btn" data-search-btn>Search</button>
+            </form>
+        </div>
+    </section>
+    <section class="forecasts">
+        <div class="places-container">
+            <ul class="places" data-places></ul>
+        </div>
+    </section>
+    <div class="flaticon">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    <script type="module" src="./js/WeatherApp.js"></script>
+</body>
+</html>
